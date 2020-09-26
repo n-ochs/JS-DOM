@@ -6,5 +6,5 @@ var button = document.getElementById('myButton')
 
 button.addEventListener('click', function() {
     let createBox = document.createElement('div');
-    document.getElementById('boxContainer').appendChild(createBox);
+    document.getElementById('boxContainer').appendChild(createBox).classList.add('box');
 })
