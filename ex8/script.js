@@ -12,11 +12,11 @@ let listItems = document.querySelectorAll('li');
 
 button.addEventListener('click', function () {
     let newItem = input.value;
-    let newListItem = document.createElement('li');
+    let newListItem = document.createElement('li'); //creates the list item element
     newListItem.innerText = newItem;
-    newListItem.addEventListener('click', function() {
+    newListItem.addEventListener('click', function() { //adds the ability to click on the item and put a line through it
         this.style.textDecoration = 'line-through'
     })
-    todoList.appendChild(newListItem);
-    input.value = ""
+    todoList.appendChild(newListItem); //adds item to the list
+    input.value = ""; //resets the input
 })
